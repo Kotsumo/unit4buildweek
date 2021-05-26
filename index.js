@@ -15,6 +15,9 @@ server.get('*', (req, res) => {
 })
 
 /* Adding my code */
+server.get('/', (req, res) => {
+  res.send("Let's have a Potluck!");
+});
 
 server.get('/api/potluck', (req, res) => {
   res.send("Let's have a Potluck!");
